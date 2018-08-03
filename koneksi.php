@@ -1,8 +1,8 @@
 <?php
 error_reporting(E_ALL ^ E_DEPRECATED);
-	$host   = "localhost";
+	$host   = "172.16.99.11:7306";
 	$user   = "root";
-	$pass   = "";
+	$pass   = "mypassword";
 	$dbName = "sewabuku";
 	
 	$kon = mysqli_connect ($host, $user, $pass);

@@ -1,0 +1,21 @@
+<table border="1" cellspacing="3" width="390" text="align" ><tr><td><br/>
+			<a href="pict/{$row['foto']}"/>
+			<img src="thumb/t_{$row['foto']} " width='100' /></a>
+	</tr></td>	
+	</table>
+	<table border="1" cellspacing="3" width="390" text="align" >
+		<tr>
+		<td>Judul Buku</td>
+		<?php
+			$no=0;
+			while ($row = mysqli_fetch_assoc($hasil)){
+				echo " <td> ".$row['judul']."</td>";
+			}
+		?>
+	</tr>
+	</table>
+	<hr/>
+	<input type = "submit" value="CARI"/>
+	</form>
+	</tr></td>
+</table>
